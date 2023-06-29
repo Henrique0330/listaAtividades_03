@@ -10,8 +10,21 @@
     */
 
     // Entrada
-    
+    const Km = Number(prompt("Qual a distância da viagem? (Em QUILÔMETROS!).").replace(",", "."))
+    const dia = Number(prompt(" Quantos quilômetros pretende viajar por dia?").replace(",", "."))
+    resultado = Km / dia
     // Processamento
-
+    if (resultado <= 3) {
+        alert(`A viagem poderá ser realizada em Qualquer Período`)
+    }
+    if (resultado <= 10) {
+        alert(`A viagem poderá ser realizada nas Férias de julho`)
+    }
+    if (resultado <= 20) {
+        alert(`A viagem poderá ser realizada nas Férias de verão`)
+    }
+    if (resultado > 20) {
+        alert(`A viagem poderá ser realizada, mas você deverá trabalhar remotamente`)
+    }
     // Saída
 </script>

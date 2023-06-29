@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <script>
-     // Problema: Custo do Dia de Trabalho
+    // Problema: Custo do Dia de Trabalho
     /*
     Peça para o programa perguntar ao usuário quantas viagens foram realizadas por dia e também qual o cargo que ocupa.
     
@@ -15,8 +15,15 @@
     */
 
     // Entrada
-    
-    // Processamento
+    const viagens = Number(prompt("Quantas viagens foram realizadas por dia?"));
+    const cargo = Number(prompt("Qual é o seu cargo?(MOTORISTA/COBRADOR)").toLowerCase())
 
+    // Processamento
+    if (cargo == "motorista") {
+        if (viagens <= 10) {
+            adicional = viagens + (20 / 100)
+            alert(`${adicional} Esse foi o valor pelas viagens`)
+        }
+    }
     // Saída
 </script>
